@@ -1,0 +1,267 @@
+/* Fondo de la página */
+body {
+    background-color: #fdf6f0;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Tarjeta central */
+.contenedor {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+    padding: 35px 30px;
+}
+
+/* Título */
+.titulo {
+    font-size: 24px;
+    color: #5a3e2b;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 14px;
+    color: #9e7b65;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Cada campo del formulario */
+.campo {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+.campo label {
+    font-size: 14px;
+    color: #5a3e2b;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs de texto */
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="date"] {
+    border: 1px solid #d4b8a8;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: 14px;
+    color: #3d2b1f;
+    background-color: #fffaf7;
+    outline: none;
+}
+
+/* Efecto al hacer clic en un input */
+.campo input:focus {
+    border-color: #c0845a;
+    box-shadow: 0 0 0 3px rgba(192, 132, 90, 0.2);
+}
+
+/* Dos columnas */
+.fila-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Radio buttons */
+.grupo-radio {
+    display: flex;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.grupo-radio label {
+    font-size: 14px;
+    color: #5a3e2b;
+    cursor: pointer;
+}
+
+/* Botón */
+.boton {
+    background-color: #c0845a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #a8693f;
+}
+
+
+.requisitos {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.requisitos p {
+    display: flex;
+    align-items: center;
+    color: #b0a59c;
+    font-size: 13px;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.circulo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 50%;
+    background-color: #e8ddd5;
+    margin-right: 10px;
+    font-size: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.requisitos p.cumplido {
+    color: #4a9e5c;
+    font-weight: 500;
+}
+
+.requisitos p.cumplido .circulo {
+    background-color: #4a9e5c;
+}
+
+
+.mensaje {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 14px;
+}
+
+
+.mensaje-exito {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 14px;
+}
+
+.mensaje-error {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fdecea;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.boton1 {
+    background-color: #c0845a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+}
+
+.boton1:hover {
+    background-color: #a8693f;
+}
+
+.mensaje-exito {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 14px;
+}
+
+.mensaje-error {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fdecea;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.enlace {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #9e7b65;
+}
+
+.enlace a {
+    color: #c0845a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace a:hover {
+    text-decoration: underline;
+}
+.info-usuario {
+    margin-top: 20px;
+    border-top: 1px solid #e8d8cc;
+    padding-top: 15px;
+}
+
+.info-fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0e6df;
+    font-size: 14px;
+}
+
+.info-label {
+    color: #9e7b65;
+    font-weight: bold;
+}
+
+.info-valor {
+    color: #3d2b1f;
+}
