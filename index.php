@@ -86,6 +86,6 @@ if (isset($_SESSION["usuario"])) {
 
   </div>
 
-<!-- <script src="register.js"></script> -->
+  <script src="register.js"></script> 
 </body>
 </html>
